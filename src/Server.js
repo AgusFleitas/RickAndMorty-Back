@@ -10,7 +10,7 @@ server.use(express.json());
 server.use(cors());
 
 app.use(function (req, res, next) {
-    const allowedOrigins = ['http://localhost:3001', 'https://rickandmorty-agusfleitas.up.railway.app/']; // Lista de URLs permitidas
+    const allowedOrigins = ['http://localhost:3001', 'https://rickandmorty-agusfleitas.up.railway.app']; // Lista de URLs permitidas
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
       res.header('Access-Control-Allow-Origin', origin);
